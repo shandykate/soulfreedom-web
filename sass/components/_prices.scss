@@ -1,0 +1,28 @@
+// .section.prices {
+//   background-image: url(/img/11143.png);
+//   background-repeat: repeat;
+//   background-size: cover;
+// }
+
+.prices-table {
+  align-self: center;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 30px;
+  width: 300px;
+
+  @media screen and (min-width: 768px) {
+    width: 708px;
+    font-size: 18px;
+    line-height: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 768px;
+  }
+}
+
+.prices td {
+  text-align: right;
+}

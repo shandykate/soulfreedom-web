@@ -1,0 +1,41 @@
+.section.contacts {
+  display: flex;
+  justify-content: center;
+  color: $heading-color;
+  background-color: $primary-text-color;
+}
+
+.contacts h2 {
+  color: $accent-color;
+}
+
+.contacts p {
+  font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.contacts a {
+  text-decoration: none;
+  color: $heading-color;
+}
+
+.contacts .map {
+  align-self: center;
+  height: 400px;
+  width: 100%;
+
+  // @media screen and (min-width: 768px) {
+  //   width: 375px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
