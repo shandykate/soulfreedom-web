@@ -3,10 +3,13 @@
 @import "./utils/visually-hidden";
 
 @import "./base/common";
-@import "./base/header";
-@import "./base/footer";
 
+@import "./components/header";
 @import "./components/hero";
-@import "./components/about-us";
+@import "./components/about";
+@import "./components/classes";
+@import "./components/schedule";
 @import "./components/prices";
+@import "./components/team";
 @import "./components/contacts";
+@import "./components/footer";

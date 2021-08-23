@@ -1,0 +1,58 @@
+/* TABLE */
+.table {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-image: url(./../../img/table-back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 414px) {
+    padding: 40px 40px;
+  }
+}
+
+.table .blocks {
+  display: flex;
+  align-items: baseline;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  overflow-x: auto;
+  white-space: nowrap;
+  // border-collapse: collapse;
+  // border-spacing: 0;
+  // margin: 0 auto;
+  text-align: center;
+}
+.table .blocks .block {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+
+  @media screen and (min-width: 1200px) {
+    width: 14.33%;
+  }
+}
+.table .blocks .tab {
+  padding: 5px 0;
+}
+.table .blocks .tab > p {
+  font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.table .blocks .ind > p {
+  font-size: 16px;
+  font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.table .blocks .color {
+  background: $table-color;
+}

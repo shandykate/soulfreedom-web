@@ -1,28 +1,115 @@
-// .section.prices {
-//   background-image: url(/img/11143.png);
-//   background-repeat: repeat;
-//   background-size: cover;
-// }
+/* PRICE */
+.price.section {
+  background-color: $white-color;
+}
 
-.prices-table {
-  align-self: center;
-  width: 100%;
-  text-align: left;
-  font-size: 14px;
-  line-height: 30px;
-  width: 300px;
+.price--table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.price--block {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 2 * 20px) / 2);
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #d19694;
+  color: #d19694;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
-    width: 708px;
-    font-size: 18px;
-    line-height: 60px;
+    width: calc((100% - 4 * 20px) / 4);
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 768px;
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 8 * 20px) / 8);
   }
 }
 
-.prices td {
-  text-align: right;
+.price--block:nth-child(1) {
+  color: #987281;
+  border: 3px solid #987281;
+}
+
+.price--block:nth-child(2) {
+  color: #e2b78f;
+  border: 3px solid #e2b78f;
+}
+
+.price--block:nth-child(3) {
+  color: grey;
+  border: 3px solid grey;
+}
+
+.price--block:nth-child(4) {
+  color: #ad6f9b;
+  border: 3px solid #ad6f9b;
+}
+
+.price--block:nth-child(6) {
+  color: #b6b6b6;
+  border: 3px solid #b6b6b6;
+}
+
+.price--block:nth-child(7) {
+  color: #e2b78f;
+  border: 3px solid #e2b78f;
+}
+
+.price--block:nth-child(8) {
+  color: #987281;
+  border: 3px solid #987281;
+}
+
+.price--block:nth-child(9) {
+  color: #ad6f9b;
+  border: 3px solid #ad6f9b;
+}
+
+.price--block:nth-child(10) {
+  color: #ab9eac;
+  border: 3px solid #ab9eac;
+}
+
+.price--block:nth-child(11) {
+  color: #987281;
+  border: 3px solid #987281;
+}
+
+.price--block:nth-child(12) {
+  color: #e2b78f;
+  border: 3px solid #e2b78f;
+}
+
+.price--block:nth-child(13) {
+  color: grey;
+  border: 3px solid grey;
+}
+
+.price--block:nth-child(14) {
+  color: #d19694;
+  border: 3px solid #d19694;
+}
+
+.price--block:nth-child(15) {
+  color: #ad6f9b;
+  border: 3px solid #ad6f9b;
+}
+
+.price--block:nth-child(16) {
+  color: #b6b6b6;
+  border: 3px solid #b6b6b6;
+}
+
+.price--name {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.price--value {
+  font-size: 30px;
 }

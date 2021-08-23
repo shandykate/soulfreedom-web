@@ -1,0 +1,230 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  height: 80px;
+  top: 0;
+  padding: 0 20px;
+  z-index: 10;
+  background-color: $background-color;
+  border-bottom: 1px solid $white-color;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 40px;
+    margin: 0 auto;
+    border-bottom: 0;
+  }
+}
+
+// LOGO ----------------------------------
+
+.header--logo {
+  display: block;
+  width: 200px;
+  height: 60px;
+  background-image: url(/img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media screen and (min-width: 1280px) {
+    width: 300px;
+    height: 80px;
+    margin-right: 40px;
+  }
+}
+
+// HEADER BTN--------------------------------
+
+.menu--button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 12px 8px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border: 0;
+  fill: $heading-color;
+  background-color: transparent;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.menu--button:hover,
+.menu--button:focus {
+  fill: $accent-color;
+}
+
+.menu--button .button--icon__cross {
+  display: none;
+}
+
+.menu--button.is-open .button--icon__cross {
+  display: block;
+  fill: $heading-color;
+}
+
+.menu--button.is-open .button--icon__burger {
+  display: none;
+}
+
+// MENU CONTAINER --------------------------
+
+.menu--container {
+  background: $accent-color;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid $white-color;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border-top: 0;
+    background-color: $background-color;
+  }
+}
+
+.menu--container.is-open {
+  display: block;
+  width: 270px;
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+// HEADER NAV  --------------------------
+
+.header--nav {
+  display: flex;
+  padding: 10px 15px;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
+}
+
+.header--menu {
+  font-size: 16px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.header--menu__item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+
+.header--menu__link {
+  position: relative;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 12px;
+  letter-spacing: 0.03em;
+  color: $white-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animation-timing;
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+    padding-bottom: 0;
+    padding: 25px 0;
+    color: $heading-color;
+  }
+}
+
+.header--menu__link:hover,
+.header--menu__link:focus {
+  color: $heading-color;
+
+  @media screen and (min-width: 1280px) {
+    color: $accent-color;
+  }
+}
+
+.header--contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.header--contacts__item:not(:last-child) {
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+  }
+}
+
+.header--contacts__link {
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: $white-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animation-timing;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $black-color;
+  }
+}
+
+.header--contacts__link:hover,
+.header--contacts__link:focus {
+  color: $heading-color;
+
+  @media screen and (min-width: 1280px) {
+    color: $accent-color;
+  }
+}
+
+.header--contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header .social-list {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}

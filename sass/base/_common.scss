@@ -7,10 +7,16 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
+  line-height: 22px;
   font-weight: 400;
 
   color: $primary-text-color;
-  background-color: $background-color;
+  background: $background-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 *,
@@ -41,17 +47,33 @@ h6 {
 }
 
 .container {
-  padding: 40px 20px;
-  text-align: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 1280px) {
+    padding: 0 40px;
+  }
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.coloured {
+  background: $white-color;
 }
 
 .section-title {
   margin-bottom: 40px;
-  font-size: 20px;
   font-size: 26px;
-  line-height: 32px;
   text-transform: uppercase;
+  text-align: center;
   color: $heading-color;
+}
+
+.simple-text {
+  text-align: center;
 }
 
 .social-list {
@@ -63,10 +85,6 @@ h6 {
 .social-item:not(:last-child) {
   @media screen and (min-width: 768px) {
     margin-right: 10px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 20px;
   }
 }
 
@@ -85,11 +103,69 @@ h6 {
 }
 
 .social:hover {
-  border-radius: 50%;
-  color: white;
+  color: $white-color;
   background-color: $heading-color;
+  border-radius: 50%;
 }
 
 .icon {
   fill: currentColor;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 45px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $white-color;
+  transition: box-shadow $animation-timing 250ms,
+    background-color $animation-timing 250ms;
+}
+
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-list__item:not(:last-child) {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+
+.btn .icon {
+  margin-right: 10px;
+}
+
+.btn.viber {
+  background: $heading-color;
+}
+
+.btn.instagram {
+  background: $instagram-color;
+}
+
+.viber:hover {
+  background-color: $accent-color;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.instagram:hover {
+  background-color: rgb(122, 100, 96);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }

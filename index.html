@@ -6,44 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./libs/slick/slick.css" />
   <link rel="icon" href="img/favicon.png" type="image/x-icon">
-  <title>Aloha - cosmetic kitchen</title>
+  <title>Soul Freedom pole dance school</title>
 </head>
 
 <body>
+  <!------------------ HEADER ------------------>
   <header class="header">
-    <nav class="header-nav">
-      <a href="./index.html" class="header-logo">
-      </a>
-
+    <a href="/index.html" class="header--logo">
+    </a>
+    <nav class="header--nav">
       <!-- MENU-BUTTON -->
-      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-        <svg class="header-svg" width="24" height="24" aria-label="Переключатель мобильного меню">
-          <use class="icon-cross" href="./img/header-menu-close.svg#icon-cross"></use>
-          <use class="icon-burger" href="./img/header-menu-close.svg#icon-menu"></use>
+      <button type="button" class="menu--button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+          <use class="button--icon__cross" href="./img/header-menu-close.svg#icon-cross"></use>
+          <use class="button--icon__burger" href="./img/header-menu-close.svg#icon-menu"></use>
         </svg>
       </button>
-
       <!-- MENU-CONTAINER -->
-      <div class="menu-container" id="menu-container" data-menu>
-
+      <div class="menu--container" id="menu-container" data-menu>
         <!-- SOCIAL-LIST -->
         <ul class="social-list ">
           <li class="social-item">
-            <a href="#" class="social" aria-label="инстаграм" target="a_blank">
+            <a href="https://www.instagram.com/sf.poledance/" class="social" aria-label="инстаграм" target="a_blank">
               <svg class="icon" width="20px" height="20px">
                 <use href="./img/symbol-defs.svg#instagram">
                 </use>
               </svg>
             </a>
           </li>
-          <li class="social-item"><a href="#" class="social" aria-label="вайбер" target="a_blank">
-              <svg class="icon" width="20px" height="20px">
-                <use href="./img/symbol-defs.svg#telegram">
-                </use>
-              </svg>
-            </a></li>
-          <li class="social-item"><a href="#" rel="nofollow"" class=" social" aria-label="вайбер">
+          <li class="social-item"><a href="viber://chat?number=%2B380634736783" rel="nofollow" class=" social"
+              aria-label="вайбер">
               <svg class="icon" width="20px" height="20px">
                 <use href="./img/symbol-defs.svg#viber">
                 </use>
@@ -51,60 +46,730 @@
             </a></li>
         </ul>
         <!-- SITE-NAV -->
-        <ul class="site-nav">
-          <li class="site-nav-item"><a href="#" class="site-nav-link">О нас</a></li>
-          <li class="site-nav-item"><a href="#" class="site-nav-link">Косметика</a></li>
-          <li class="site-nav-item"><a href="#" class="site-nav-link">Цены</a></li>
-          <li class="site-nav-item"><a href="#" class="site-nav-link">Оплата и доставка</a></li>
-          <li class="site-nav-item"><a href="#" class="site-nav-link">Контакты</a></li>
+        <ul class="header--menu">
+          <li class="header--menu__item"><a href="#classes" class="header--menu__link">Занятия</a></li>
+          <li class="header--menu__item"><a href="#table" class="header--menu__link">Расписание</a></li>
+          <li class="header--menu__item"><a href="#price" class="header--menu__link">Цены</a></li>
+          <li class="header--menu__item"><a href="#team" class="header--menu__link">Команда</a></li>
+          <li class="header--menu__item"><a href="#contacts" class="header--menu__link">Контакты</a></li>
         </ul>
-
         <!-- HEADER-CONTACTS -->
-        <ul class="header-contacts list">
-          <li class="header-contacts-item"><a href="mailto:alohafede@ukr.net" class="header-contacts-link">
-              <svg class="header-contacts-icon" width="16px" height="11px">
+        <ul class="header--contacts list">
+          <li class="header--contacts__item"><a href="mailto:soulfreedom32b@gmail.com" class="header--contacts__link">
+              <svg class="header--contacts__icon" width="16px" height="11px">
                 <use href="./img/symbol-defs.svg#icon-envelope"></use>
-              </svg>alohafede@ukr.net</a></li>
-          <li class="header-contacts-item"><a href="tel:+380932222222" class="header-contacts-link">
-              <svg class="header-contacts-icon" width="10px" height="16px">
-                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-              </svg>+38 093 222 22 22</a></li>
+              </svg>soulfreedom32b@gmail.com</a></li>
+          <li class="header--contacts__item"><a href="tel:+380634736783" class="header--contacts__link">
+              <svg class="header--contacts__icon" width="10px" height="16px">
+                <use href="./img/symbol-defs.svg#icon-cellphone"></use>
+              </svg>+38 063 473 67 83</a></li>
         </ul>
-
       </div>
     </nav>
   </header>
+
   <main>
+    <!----------------- HERO ------------------>
+    <section class="hero">
+      <iframe src="https://www.youtube.com/embed/TzW8IPoh-WY?controls=0" title="Soul Freedom Video" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <h1 class="hero--title visually-hidden">Студия pole dance на Оболони</h1>
 
-    <section class="hero-section">
-      <h1 class="hero-title">Косметика ручной работы</h1>
-      <h2 class="hero-description">Только из натуральных ингредиентов</h2>
     </section>
 
-    <section class="aboutus-section">
+    <!---------------- ABOUT ------------------>
+    <section class="about section">
+      <h2 class="section-title visually-hidden">О нас</h2>
       <div class="container">
+        <p class="simple-text">Мы рады каждому, кто хочет научиться красиво танцевать, развивать силу, гибкость,
+          пластику.
+          Нашей тренерской практике в этом году исполнилось 11 лет.
+          Мы работаем каждый день по предварительной записи,
+          в группах и индивидуально, по направдениям для взрослых и детей</p>
+        <ul class="btn-list">
+          <li class="btn-list__item">
+            <a class="viber btn" href="viber://chat?number=%2B380634736783" target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#viber">
+                </use>
+              </svg>Записаться Viber</a>
+          </li>
+          <li class="btn-list__item"><a class="instagram btn" href="https://www.instagram.com/sf.poledance/"
+              target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#instagram">
+                </use>
+              </svg>Записаться Instagram</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!--------------- CLASSES ----------------->
+    <section id="classes" class="classes section coloured">
+      <h2 class="section-title">Занятия</h2>
+      <!-- CLASSES -->
+      <ul class="class--list container">
+        <li class="class--item">
+          <h3 class="class--name">Pole Dance</h3>
+          <div class="class--flex">
+            <img class="class--img" src="/img/pole-dance.png" alt="pole dance">
+            <p class="class--text">Занятия pole dance (pole sport) подойдут как новичку так и продвинутому профи.
+              Тренер на занятии уделяет равное количество внимания каждому ученику
+              и подбирает программу, интересную для разных уровней. Если Вы ищете спортивное направление,
+              которое будет разнообразным по нагрузке, интересным эмоционально и наполненным
+            </p>
+          </div>
+        </li>
+        <li class="class--item">
+          <h3 class="class--name">Pole Kids</h3>
+          <div class="class--flex">
+            <img class="class--img" src="/img/pole-kids.png" alt="pole kids">
+            <p class="class--text">Занятия для пилоне с детьми отличаются большим количеством ОФП, обязательной
+              работой на обе стороны тела и дисциплиной. Наши тренера увлекут и замотивируют
+              ребенка собственным примером и привнесут в его жизнь новое и полезное хобби.
+            </p>
+          </div>
+        </li>
+        <li class="class--item">
+          <h3 class="class--name">Stretching</h3>
+          <div class="class--flex">
+            <img class="class--img" src="/img/stratch.png" alt="stretching">
+            <p class="class--text">Растяжка мышц и связок, подвижность суставов теперь доступна каждому, кто готов
+              регулярно заниматься и стремиться к результату. Занятия стретчингом у нас в студии
+              всегда направлены на проработку одного из направлений: поперечный, продольный шпагаты, гибкость спины.
+            </p>
+          </div>
+        </li>
+        <li class="class--item">
+          <h3 class="class--name">Exotic Pole Dance</h3>
+          <div class="class--flex">
+            <img class="class--img" src="/img/exotic.png" alt="exotic pole dance">
+            <p class="class--text">Занятия exotic pole dance - самые танцевальные. Здесь развивается сила, пластика,
+              чувство ритма, музыкальность, работа с подьемами стоп. На занятиях экозтом необходимо
+              использовать защиту коленей, а также иметь специальную танцевальную обувь - стрипы.
+            </p>
+          </div>
+        </li>
+        <li class="class--item">
+          <h3 class="class--name">Воздух акро</h3>
+          <div class="class--flex">
+            <img class="class--img" src="/img/aerial.png" alt="воздушная акробатика">
+            <p class="class--text">Занятия на воздушных полотнах (aerial silks) и цирковом кольце (aerial hoop) -
+              сравнительно
+              новое направление, но уже успевшее завоевать любовь многих спортсменов. Теперь все, кто не занимался
+              гимнастикой или акробатикой
+              с детства могут почувствовать себя настоящими воздушными акробатами. Воздушная акробатика прорабатывает
+              все группы мышц, развиваетсясилу и гибкость.
+              Занятия проходят в мини-группах и подойдут как взрослым так и детям.
+            </p>
+          </div>
+        </li>
+        <li class="class--item">
+          <h3 class="class--name">Pole Contemporary</h3>
+          <div class="class--flex">
+            <img class="class--img" src="/img/contemp.png" alt="pole сontemporary">
+            <p class="class--text">Pole contemporary dance подойдет для тех, кто хочет учиться танцевать с
+              пилоном без танцевальной обуви (стрипов), как взрослым так и детям. Здесь группа разучивает вместе
+              с тренером танцевальную связку с пилоном и преимущественно околопилонной хореографией, вкатывая ее в
+              музыку.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <!-- BTN LIST -->
+      <ul class="btn-list">
+        <li class="btn-list__item">
+          <a class="viber btn" href="viber://chat?number=%2B380634736783" target="a_blank">
+            <svg class="icon" width="20px" height="20px">
+              <use href="./img/symbol-defs.svg#viber">
+              </use>
+            </svg>
+            Записаться Viber</a>
+        </li>
+        <li class="btn-list__item"><a class="instagram btn" href="https://www.instagram.com/sf.poledance/"
+            target="a_blank">
+            <svg class="icon" width="20px" height="20px">
+              <use href="./img/symbol-defs.svg#instagram">
+              </use>
+            </svg>Записаться Instagram</a></li>
+      </ul>
+    </section>
+
+    <!--------------- SCHEDULE ----------------->
+    <section id="table" class="table">
+      <h2 class="section-title">Расписание</h2>
+      <div class="blocks">
+        <div class="block">
+          <div class="tab ind">
+            <p>ПН</p>
+          </div>
+          <div class="tab color">
+            <p><b>9:00</b>
+              <br>Pole Dance<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>10:00</b>
+              <br>Exotic<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>11:00</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab color">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>15:00</b>
+              <br>Полотна<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>16:00</b>
+              <br>Pole Kids<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>17:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>18:15</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>19:30</b>
+              <br>Exotic<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>20:30</b>
+              <br>Stretching<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="tab ind">
+            <p>ВТ</p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>10:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>11:00</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>12:00</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>17:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>18:15</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>19:15</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>20:30</b>
+              <br>Exotic
+            </p>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="tab ind">
+            <p>СР</p>
+          </div>
+          <div class="tab color">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>10:00</b>
+              <br>Pole Dance<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>11:00</b>
+              <br>Stretching<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>12:00</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab color">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>16:00</b>
+              <br>Полотна<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>17:00</b>
+              <br>Pole Kids
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>18:00</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>19:00</b>
+              <br>Pole Dance<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>20:15</b>
+              <br>Stretching<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="tab ind">
+            <p>ЧТ</p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>10:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>11:00</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>12:00</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>17:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>18:15</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>19:30</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>20:30</b>
+              <br>Stretching
+            </p>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="tab ind">
+            <p>ПТ</p>
+          </div>
+          <div class="tab color">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>10:00</b>
+              <br>Pole Dance<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>11:00</b>
+              <br>Stretching<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>12:00</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab color">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>16:00</b>
+              <br>Полотна<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>17:00</b>
+              <br>Pole Kids
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>18:00</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>19:00</b>
+              <br>Pole Dance<br>
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>20:15</b>
+              <br>Exotic<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="tab ind">
+            <p>СБ</p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>11:00</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>12:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>13:00</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>17:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>18:15</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab">
+            <p><b>19:15</b>
+              <br>Exotic
+            </p>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="tab ind">
+            <p>ВС</p>
+          </div>
+          <div class="tab color">
+            <p><b>10:00</b>
+              <br>Постановки
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>11:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>12:00</b>
+              <br>Exotic
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>13:00</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab color">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>16:00</b>
+              <br>Полотна
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>17:00</b>
+              <br>Pole Dance
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>18:15</b>
+              <br>Stretching
+            </p>
+          </div>
+          <div class="tab color">
+            <p><b>19:15</b>
+              <br>Pole Contemporary
+            </p>
+          </div>
+          <div class="tab color">
+            <p>&nbsp;
+              <br>&nbsp;
+            </p>
+          </div>
+        </div>
 
       </div>
     </section>
 
-    <section class="products-section">
+    <!---------------- PRICES ------------------>
+    <section id="price" class="price section">
+      <div class="container">
+        <h2 class="section-title">Цены</h2>
+        <ul class="price--table">
+          <li class="price--block">
+            <p class="price--name">Пробное <br> посещение</p>
+            <p class="price--value">100 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Разовое <br>посещение</p>
+            <p class="price--value">150 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">4 занятия</p>
+            <p class="price--value">480 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">6 занятий</p>
+            <p class="price--value">680 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">8 занятий</p>
+            <p class="price--value">810 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">10 занятий</p>
+            <p class="price--value">990 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">12 занятий</p>
+            <p class="price--value">1280 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">16 заянтий</p>
+            <p class="price--value">1400 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Безлим 1 мес</p>
+            <p class="price--value">1950 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Безлим 3 мес</p>
+            <p class="price--value">4600 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Инд. 1чел / 1час</p>
+            <p class="price--value">400 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Инд. 2чел / 1час</p>
+            <p class="price--value">500</p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">5 индивов</p>
+            <p class="price--value">1800</p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Аренда 1час<br> (до 4х чел)</p>
+            <p class="price--value">200 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Аренда 1час<br>(4+ чел)</p>
+            <p class="price--value">250 </p>
+          </li>
+          <li class="price--block">
+            <p class="price--name">Аренда пилона</p>
+            <p class="price--value">100 </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="prices-section">
-      <div class="container">
+    <section id="team" class="team section">
+      <div class="team--container">
+        <h2 class="section-title">Команда</h2>
+
+        <div class="slider">
+          <div class="slide alfimova">
+            <div class="slide--photo"></div>
+            <div class="slide--name">Екатерина Алфимова</div>
+            <div class="slide--text">Тренер Pole Dance, Exotic, Stretching, Kids</div>
+          </div>
+          <div class="slide masha">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Мария Агабалаева</div>
+            <div class="slide--text">Тренер Pole Dance, Exotic, Stretching</div>
+          </div>
+          <div class="slide anya">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Анна Осадчая</div>
+            <div class="slide--text">Тренер Pole Dance, Exotic, Stretching</div>
+          </div>
+          <div class="slide makentosh">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Ирина Макентош</div>
+            <div class="slide--text">Тренер Pole Dance, Exotic, Stretching</div>
+          </div>
+          <div class="slide eva">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Ева Грицаенко</div>
+            <div class="slide--text">Тренер Pole Dance, Exotic, Stretching</div>
+          </div>
+          <div class="slide yana">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Яна Лис</div>
+            <div class="slide--text">Тренер Pole Dance, Exotic, Stretching</div>
+          </div>
+          <div class="slide liza">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Лиза Эльберт</div>
+            <div class="slide--text">Тренер Pole Dance, Pole Contrmporary, Kids</div>
+          </div>
+          <div class="slide danilova">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Екатерина Данилова</div>
+            <div class="slide--text">Тренер Pole Dance, Exotic</div>
+          </div>
+          <div class="slide kirillina">
+            <div class="slide--photo "></div>
+            <div class="slide--name">Ирина Кириллина</div>
+            <div class="slide--text">Тренер Exotic</div>
+          </div>
+        </div>
 
       </div>
     </section>
 
-    <section class="contacts-section">
+    <!------------------ CONTACTS ----------------->
+    <section id="contacts" class="contacts section">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <p class="simple-text">Мы находимся в 5-ти минутах ходьбы от
+          м. Минская или в 10-ти от м. Героев Днепра (во
+          дворах за "Obolon Residence") </p>
+        <ul class="contacts--list">
+          <li class="contacts--list__item simple-text ">
+            <svg class="contacts--list__icon" width="20px" height="26px">
+              <use href="./img/symbol-defs.svg#icon-location"></use>
+            </svg>г. Киев, пр. Оболонский, 32Б
+          </li>
+          <li class="contacts--list__item simple-text"><a href="tel:+380634736783" class="contacts--list__link">
+              <svg class="contacts--list__icon" width="18px" height="26px">
+                <use href="./img/symbol-defs.svg#icon-cellphone"></use>
+              </svg>+38 063 473 67 83</a></li>
+        </ul>
+        <ul class="btn-list">
+          <li class="btn-list__item">
+            <a class="viber btn" href="viber://chat?number=%2B380634736783" target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#viber">
+                </use>
+              </svg>Записаться Viber</a>
+          </li>
+          <li class="btn-list__item"><a class="instagram btn" href="https://www.instagram.com/sf.poledance/"
+              target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#instagram">
+                </use>
+              </svg>Записаться Instagram</a></li>
+        </ul>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.942703761969!2d30.500901515509735!3d50.51663289047534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d3029f6266fd%3A0x166beabbc08eb22f!2sSoulFreedom%20pole%20dance!5e0!3m2!1suk!2sua!4v1627239287260!5m2!1suk!2sua"
+          style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </section>
 
   </main>
 
+  <!------------------ FOOTER ------------------>
   <footer>
-    <div class="container">
-
-    </div>
+    <p class="simple-text">SoulFreedom &copy; 2019</p>
   </footer>
-  <script src="./js/menu.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
+  <script src="./js/menu.js" type="module"></script>
+  <script src="./js/scroll.js" type="module"></script>
+  <script src="./js/slider.js" type="module"></script>
+  <script src="./libs/PageScroll2id.min.js"></script>
+  <script src="./libs/slick/slick.min.js" type="module"></script>
 </body>

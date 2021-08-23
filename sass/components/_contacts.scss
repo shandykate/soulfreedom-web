@@ -1,41 +1,32 @@
-.section.contacts {
-  display: flex;
-  justify-content: center;
-  color: $heading-color;
-  background-color: $primary-text-color;
+.contacts--list {
+  margin-bottom: 40px;
 }
 
-.contacts h2 {
+.contacts--list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts--list__icon {
+  margin-right: 20px;
+  fill: currentColor;
+}
+
+.contacts--list__link {
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
+.contacts-link:hover {
   color: $accent-color;
 }
 
-.contacts p {
-  font-size: 14px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-  }
+.contacts .btn-list {
+  margin-bottom: 40px;
 }
 
-.contacts a {
-  text-decoration: none;
-  color: $heading-color;
-}
-
-.contacts .map {
-  align-self: center;
-  height: 400px;
+.contacts iframe {
+  display: block;
   width: 100%;
-
-  // @media screen and (min-width: 768px) {
-  //   width: 375px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  max-width: 1280px;
+  height: 450px;
 }
