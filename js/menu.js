@@ -13,7 +13,7 @@
     });
 
     // close menu on menu item click
-    document.querySelectorAll('.site-nav-link').forEach(item => {
+    document.querySelectorAll('.header--menu__link').forEach(item => {
         item.addEventListener('click', event => {
             mobileMenuRef.classList.toggle("is-open");
             menuBtnRef.classList.toggle("is-open");

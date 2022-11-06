@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
   line-height: 22px;
@@ -51,6 +51,7 @@ h6 {
   max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
+
   @media screen and (min-width: 1280px) {
     padding: 0 40px;
   }
@@ -97,8 +98,7 @@ h6 {
   border-radius: 50%;
   color: $heading-color;
   background-color: transparent;
-  transition: color $animation-timing 250ms,
-    background-color $animation-timing 250ms,
+  transition: color $animation-timing 250ms, background-color $animation-timing 250ms,
     border-radius $animation-timing 250ms;
 }
 
@@ -130,22 +130,19 @@ h6 {
   text-transform: uppercase;
   font-weight: 500;
   color: $white-color;
-  transition: box-shadow $animation-timing 250ms,
-    background-color $animation-timing 250ms;
+  transition: box-shadow $animation-timing 250ms, background-color $animation-timing 250ms;
 }
 
 .btn-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
 .btn-list__item:not(:last-child) {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 40px;
-  }
 }
 
 .btn .icon {
