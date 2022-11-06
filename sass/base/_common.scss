@@ -3,13 +3,11 @@ html,
 body {
   box-sizing: border-box;
   margin: 0;
-
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
   line-height: 22px;
   font-weight: 400;
-
   color: $primary-text-color;
   background: $background-color;
 
@@ -134,15 +132,21 @@ h6 {
 }
 
 .btn-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .btn-list__item:not(:last-child) {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+
+  
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+  }
 }
 
 .btn .icon {
