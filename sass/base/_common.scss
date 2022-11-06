@@ -132,7 +132,7 @@ h6 {
 }
 
 .btn-list {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
   }
@@ -142,11 +142,12 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
 
-  
-  @media screen and (min-width: 1280px) {
-    margin: 0;
-  }
+.btn-list__item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 .btn .icon {

@@ -26,10 +26,8 @@ Use a more readable tab size (opinionated).
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /*
@@ -59,10 +57,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -92,10 +88,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -133,10 +127,8 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -152,14 +144,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -176,9 +164,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -231,11 +219,9 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -250,10 +236,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -285,7 +269,7 @@ html,
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.04em;
   line-height: 22px;
@@ -293,10 +277,9 @@ body {
   color: #636363;
   background: #eeeeee;
 }
-
 @media screen and (min-width: 1280px) {
   html,
-  body {
+body {
     font-size: 16px;
     line-height: 26px;
   }
@@ -335,7 +318,6 @@ h6 {
   padding: 0 20px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0 40px;
@@ -414,16 +396,23 @@ h6 {
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.btn-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .btn-list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .btn-list__item:not(:last-child) {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+.btn-list__item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
 .btn .icon {
@@ -444,7 +433,7 @@ h6 {
 }
 
 .instagram:hover {
-  background-color: #7a6460;
+  background-color: rgb(122, 100, 96);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -462,7 +451,6 @@ h6 {
   background-color: #eeeeee;
   border-bottom: 1px solid #fff;
 }
-
 @media screen and (min-width: 1280px) {
   .header {
     padding: 0 40px;
@@ -480,7 +468,6 @@ h6 {
   background-position: center;
   background-size: contain;
 }
-
 @media screen and (min-width: 1280px) {
   .header--logo {
     width: 300px;
@@ -500,7 +487,6 @@ h6 {
   fill: #6e386c;
   background-color: transparent;
 }
-
 @media screen and (min-width: 1280px) {
   .menu--button {
     display: none;
@@ -528,7 +514,6 @@ h6 {
 .menu--container {
   background: #9a709e;
 }
-
 @media screen and (max-width: 1279px) {
   .menu--container {
     display: none;
@@ -540,7 +525,6 @@ h6 {
     border-top: 1px solid #fff;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .menu--container {
     display: flex;
@@ -557,13 +541,11 @@ h6 {
   display: block;
   width: 270px;
 }
-
 @media screen and (min-width: 768px) {
   .menu--container.is-open {
     width: 400px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .menu--container.is-open {
     display: flex;
@@ -575,7 +557,6 @@ h6 {
   display: flex;
   padding: 10px 15px;
 }
-
 @media screen and (min-width: 1280px) {
   .header--nav {
     padding: 0;
@@ -586,7 +567,6 @@ h6 {
   font-size: 16px;
   margin-bottom: 40px;
 }
-
 @media screen and (min-width: 1280px) {
   .header--menu {
     display: flex;
@@ -600,7 +580,6 @@ h6 {
 .header--menu__item:not(:last-child) {
   margin-bottom: 10px;
 }
-
 @media screen and (min-width: 1280px) {
   .header--menu__item:not(:last-child) {
     margin-bottom: 0;
@@ -620,7 +599,6 @@ h6 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @media screen and (min-width: 1280px) {
   .header--menu__link {
     margin: 0;
@@ -634,10 +612,9 @@ h6 {
 .header--menu__link:focus {
   color: #6e386c;
 }
-
 @media screen and (min-width: 1280px) {
   .header--menu__link:hover,
-  .header--menu__link:focus {
+.header--menu__link:focus {
     color: #9a709e;
   }
 }
@@ -650,7 +627,6 @@ h6 {
 .header--contacts__item:not(:last-child) {
   margin-bottom: 12px;
 }
-
 @media screen and (min-width: 1280px) {
   .header--contacts__item:not(:last-child) {
     margin-bottom: 0;
@@ -667,7 +643,6 @@ h6 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @media screen and (min-width: 1280px) {
   .header--contacts__link {
     display: flex;
@@ -681,10 +656,9 @@ h6 {
 .header--contacts__link:focus {
   color: #6e386c;
 }
-
 @media screen and (min-width: 1280px) {
   .header--contacts__link:hover,
-  .header--contacts__link:focus {
+.header--contacts__link:focus {
     color: #9a709e;
   }
 }
@@ -697,7 +671,6 @@ h6 {
 .header .social-list {
   margin-bottom: 40px;
 }
-
 @media screen and (min-width: 1280px) {
   .header .social-list {
     margin-bottom: 0;
@@ -726,13 +699,11 @@ h6 {
   width: 100%;
   height: 315px;
 }
-
 @media screen and (min-width: 768px) {
   .hero iframe {
     height: 400px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .hero iframe {
     height: 500px;
@@ -748,7 +719,6 @@ h6 {
   display: flex;
   flex-wrap: wrap;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .class--list {
     margin-bottom: 40px;
@@ -758,11 +728,10 @@ h6 {
 .class--item {
   margin: 0 auto 40px auto;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .class--item {
     margin: 10px;
-    width: calc((100% - 2 * 20px) / 2);
+    width: calc((100% - 40px) / 2);
   }
 }
 
@@ -784,7 +753,6 @@ h6 {
   max-width: 400px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 1280px) {
   .class--img {
     width: 400px;
@@ -795,7 +763,6 @@ h6 {
 .class--text {
   display: inline-block;
 }
-
 @media screen and (max-width: 1279px) {
   .class--text {
     display: none;
@@ -808,7 +775,6 @@ h6 {
   margin: 0 auto;
   padding: 40px 20px;
 }
-
 @media screen and (min-width: 414px) {
   .table {
     padding: 40px 40px;
@@ -816,11 +782,11 @@ h6 {
 }
 
 .table.obolon {
-  background: #cfc7d4;
+  background: rgb(207, 199, 212);
 }
 
 .table.garmatna {
-  background: #ececec;
+  background: rgb(236, 236, 236);
 }
 
 .table .blocks {
@@ -837,7 +803,6 @@ h6 {
   flex-direction: column;
   min-width: 140px;
 }
-
 @media screen and (min-width: 1200px) {
   .table .blocks .block {
     width: 14.33%;
@@ -851,7 +816,6 @@ h6 {
 .table .blocks .tab > p {
   font-size: 14px;
 }
-
 @media screen and (min-width: 768px) {
   .table .blocks .tab > p {
     font-size: 16px;
@@ -862,7 +826,6 @@ h6 {
   font-size: 16px;
   font-weight: 600;
 }
-
 @media screen and (min-width: 768px) {
   .table .blocks .ind > p {
     font-size: 18px;
@@ -887,23 +850,21 @@ h6 {
 .price--block {
   display: flex;
   flex-direction: column;
-  width: calc((100% - 2 * 20px) / 2);
+  width: calc((100% - 40px) / 2);
   padding: 10px;
   margin: 10px;
   border: 3px solid #d19694;
   color: #d19694;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   .price--block {
-    width: calc((100% - 4 * 20px) / 4);
+    width: calc((100% - 80px) / 4);
   }
 }
-
 @media screen and (min-width: 1280px) {
   .price--block {
-    width: calc((100% - 8 * 20px) / 8);
+    width: calc((100% - 160px) / 8);
   }
 }
 
@@ -1083,7 +1044,6 @@ h6 {
 .contacts--tel {
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 768px) {
   .contacts--tel {
     margin-bottom: 40px;
@@ -1115,32 +1075,16 @@ h6 {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .adress--list {
-    flex-direction: row;
-    margin: -20px;
-  }
-}
-
 .adress--list__item {
   width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .adress--list__item {
-    width: calc((100% - 2 * 40px) / 2);
-    margin: 40px;
-  }
 }
 
 .adress--list__item:not(:last-child) {
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 768px) {
   .adress--list__item:not(:last-child) {
-    margin-bottom: 0;
-    margin-right: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1160,5 +1104,4 @@ footer {
   margin: 0;
   padding: 10px 0;
   background: #fff;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

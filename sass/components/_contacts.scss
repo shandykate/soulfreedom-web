@@ -34,28 +34,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    margin: -20px;
   }
-}
 
 .adress--list__item {
   width: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 40px) / 2);
-    margin: 40px;
-  }
 }
 
 .adress--list__item:not(:last-child) {
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 40px;
+    margin-bottom: 40px;
   }
 }
 
